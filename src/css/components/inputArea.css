@@ -1,0 +1,10 @@
+.InputArea{
+  margin-top: 20px;
+}
+
+.InputArea .newInput{
+  border: none;
+  outline: none;
+  text-indent: 15px;
+  width: calc(100% - 44px);
+}
