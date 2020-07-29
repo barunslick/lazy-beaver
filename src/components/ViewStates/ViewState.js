@@ -11,7 +11,8 @@ export class ViewState extends Component {
     return (
       <div className="ViewState">
         {
-          Object.entries(states).map((item, index) => <ViewChangeBtn key = {index} text={item[0]} id = {index} currentShowing = {this.props.currentShowing} changeViewState = {(newStateId) => this.props.changeViewState.call(this, newStateId)}/>) 
+          Object.entries(states)
+          .map((item, index) => <ViewChangeBtn key = {index} text={item[0]} id = {index} currentShowing = {this.props.currentShowing} changeViewState = {(newStateId) => this.props.changeViewState.call(this, newStateId)}/>) 
         }
       </div>
     )

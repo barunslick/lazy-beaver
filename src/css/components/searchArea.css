@@ -1,0 +1,21 @@
+.SearchArea{
+  margin-top: 16px;  
+  padding: 12px 15px;
+  background: #f0f2f7;
+  border-radius: 18px;
+}
+
+.SearchArea input{
+  border: none;
+  outline: none;
+  background: #f0f2f7;
+  width: 91%;
+}
+
+.SearchArea button{
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  font-size: 18px;
+  background: #f0f2f7;
+}
