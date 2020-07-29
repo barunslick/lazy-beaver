@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './components/Header/Header';
 import InputArea from './components/Input/InputArea';
 import AllTodos from './components/Todo/AllTodos';
+import states from './constants/states';
+import ViewState from './components/ViewStates/ViewState';
 import './App.css';
 import './css/reset.css';
 import './css/style.css';
@@ -12,22 +14,12 @@ class App extends React.Component {
     super();
     this.state = {
       todos: [
-        {
-          id: 0,
-          content: 'Hello mate',
-          completed: false
-        },
-        {
-          id: 1,
-          content: 'Hello check',
-          completed: false
-        }
-      ]
+      ],
+      currentShowing: states.ALL
     }
   }
 
   addItem = (item) => {
-    console.log('hey')
     this.setState({
       todos : [...this.state.todos,{
         id: this.state.todos.length,
@@ -46,14 +38,20 @@ class App extends React.Component {
     })
   }
 
+  changeViewState = (newState) => {
+    this.setState({
+      currentShowing: newState
+    })
+  }
 
   render(){
     return (
       <div className="App">
-        <Header />
         <div className="container">
+          <Header />
           <InputArea addItem = {this.addItem}/>
-          <AllTodos items={this.state.todos} toggleCompletion={(itemId)=> this.changeCompletion(itemId)}/>
+          <ViewState noOfItems = {this.state.todos.length} currentShowing = {this.state.currentShowing} changeViewState= {(newState) => this.changeViewState (newState)}/>
+          <AllTodos items={this.state.todos} currentShowing = {this.state.currentShowing} toggleCompletion={(itemId)=> this.changeCompletion(itemId)}/>
         </div>
       </div>
     );

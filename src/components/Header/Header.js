@@ -13,9 +13,7 @@ export class Header extends Component {
   render() {
     return (
       <div className="Header" style= {HeaderStyle}>
-        <div className="container">
           <h1>Lazy Beaver</h1>
-        </div>
       </div>
     )
   }

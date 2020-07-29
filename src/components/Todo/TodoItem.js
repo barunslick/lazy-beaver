@@ -20,7 +20,7 @@ export class TodoItem extends Component {
     return (
       <li style={this.getStyle()}>
         <p style={this.getPStyle()}>{this.props.item.content}</p>
-        <Checkbox toggleCompletion= {this.props.toggleCompletion.bind(this, this.props.item.id)} />
+        <Checkbox item ={this.props.item} toggleCompletion= {this.props.toggleCompletion.bind(this, this.props.item.id)} />
       </li>
     )
   }

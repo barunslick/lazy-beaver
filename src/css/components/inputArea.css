@@ -1,5 +1,5 @@
 .InputArea{
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .InputArea .newInput{
@@ -7,4 +7,9 @@
   outline: none;
   text-indent: 15px;
   width: calc(100% - 44px);
+}
+
+
+.InputArea button{
+  cursor: pointer;
 }
