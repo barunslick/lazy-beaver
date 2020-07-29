@@ -12,16 +12,25 @@ export class InputArea extends Component {
   }
 
   addInput = (e)=>{
-    this.setState({
+    this.setState ({
       inputValue : e.target.value
-    })    
+    })
+  }
+
+  addItemAndClear = () =>{
+    if (this.state.inputValue){
+      this.props.addItem.call(this, this.state.inputValue);
+      this.setState({
+        inputValue : ''
+      })
+    }
   }
 
   render() {
     return (
       <div className="InputArea">
-        <input className="newInput" placeholder="Add new Task" onChange = {(e)=>this.addInput(e)}></input>
-        <InputButton name="inputButton" addItem={this.props.addItem.bind(this, this.state.inputValue)}/>
+        <input className="newInput" placeholder="Add new Task" value={this.state.inputValue} onChange = {(e)=>this.addInput(e)}></input>
+        <InputButton name="inputButton" addItemAndClear={this.addItemAndClear}/>
       </div>
     )
   }

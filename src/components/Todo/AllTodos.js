@@ -10,7 +10,7 @@ export class AllTodos extends Component {
       <div className="AllTodos">
         <ul>
           {
-            allItems.map((todoItem, index) => <TodoItem key={index} item={todoItem}/>)
+            allItems.map((todoItem, index) => <TodoItem key={todoItem.id} item={todoItem} toggleCompletion={(id) => this.props.toggleCompletion.call(this, id)}/>)
           }
         </ul>
       </div>

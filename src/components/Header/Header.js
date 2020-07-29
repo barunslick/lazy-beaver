@@ -16,7 +16,6 @@ export class Header extends Component {
         <div className="container">
           <h1>Lazy Beaver</h1>
         </div>
-        
       </div>
     )
   }

@@ -16,7 +16,7 @@ const buttonStyle ={
 export class InputButton extends Component {
   render() {
     return (
-      <button className={this.props.name} style={buttonStyle} onClick = {this.props.addItem} >+</button>
+      <button className={this.props.name} style={buttonStyle} onClick = {this.props.addItemAndClear}>+</button>
     )
   }
 }
