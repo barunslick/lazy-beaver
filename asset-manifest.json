@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/lazy-beaver/static/css/main.e7ed9830.chunk.css",
-    "main.js": "/lazy-beaver/static/js/main.40c3a13c.chunk.js",
-    "main.js.map": "/lazy-beaver/static/js/main.40c3a13c.chunk.js.map",
+    "main.css": "/lazy-beaver/static/css/main.23efdaa1.chunk.css",
+    "main.js": "/lazy-beaver/static/js/main.52c05aee.chunk.js",
+    "main.js.map": "/lazy-beaver/static/js/main.52c05aee.chunk.js.map",
     "runtime-main.js": "/lazy-beaver/static/js/runtime-main.1c4f483a.js",
     "runtime-main.js.map": "/lazy-beaver/static/js/runtime-main.1c4f483a.js.map",
     "static/js/2.7cc34e92.chunk.js": "/lazy-beaver/static/js/2.7cc34e92.chunk.js",
     "static/js/2.7cc34e92.chunk.js.map": "/lazy-beaver/static/js/2.7cc34e92.chunk.js.map",
     "index.html": "/lazy-beaver/index.html",
-    "precache-manifest.308c9fb87eed64bf1ea3d2dc37fe986b.js": "/lazy-beaver/precache-manifest.308c9fb87eed64bf1ea3d2dc37fe986b.js",
+    "precache-manifest.d0c2bbcbccc5e1286f48ab5adc1b7cf3.js": "/lazy-beaver/precache-manifest.d0c2bbcbccc5e1286f48ab5adc1b7cf3.js",
     "service-worker.js": "/lazy-beaver/service-worker.js",
-    "static/css/main.e7ed9830.chunk.css.map": "/lazy-beaver/static/css/main.e7ed9830.chunk.css.map",
+    "static/css/main.23efdaa1.chunk.css.map": "/lazy-beaver/static/css/main.23efdaa1.chunk.css.map",
     "static/js/2.7cc34e92.chunk.js.LICENSE.txt": "/lazy-beaver/static/js/2.7cc34e92.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1c4f483a.js",
     "static/js/2.7cc34e92.chunk.js",
-    "static/css/main.e7ed9830.chunk.css",
-    "static/js/main.40c3a13c.chunk.js"
+    "static/css/main.23efdaa1.chunk.css",
+    "static/js/main.52c05aee.chunk.js"
   ]
 }

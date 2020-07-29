@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d1c32b0a17d562ee0ac420255d06e30c",
+    "revision": "cc7bb20eaeffdb03f3c131a27f3e3f6e",
     "url": "/lazy-beaver/index.html"
   },
   {
-    "revision": "3c83e76defe67de6d55d",
-    "url": "/lazy-beaver/static/css/main.e7ed9830.chunk.css"
+    "revision": "fab2cac8c3b607a9dbc5",
+    "url": "/lazy-beaver/static/css/main.23efdaa1.chunk.css"
   },
   {
     "revision": "29c2b004b7cba34b5bea",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lazy-beaver/static/js/2.7cc34e92.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3c83e76defe67de6d55d",
-    "url": "/lazy-beaver/static/js/main.40c3a13c.chunk.js"
+    "revision": "fab2cac8c3b607a9dbc5",
+    "url": "/lazy-beaver/static/js/main.52c05aee.chunk.js"
   },
   {
     "revision": "13f98aa25d9a88ade504",
