@@ -17,6 +17,7 @@ export class TodoItem extends Component {
     }
   }
 
+
   render() {
     return (
       <li style={this.getStyle()} className="TodoItem">

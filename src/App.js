@@ -1,11 +1,12 @@
 import React from 'react';
 import states from './constants/states';
+/* import Count from './components/Count/Count.js'; */
 import Header from './components/Header/Header';
 import AllTodos from './components/Todo/AllTodos';
 import InputArea from './components/Input/InputArea';
-
-import ViewState from './components/ViewStates/ViewState';
 import SearchArea from './components/Input/SearchArea';
+import ViewState from './components/ViewStates/ViewState';
+
 
 import './App.scss';
 import './style/reset.scss';
@@ -19,7 +20,8 @@ class App extends React.Component {
       todos: [
       ],
       searchText: '',
-      currentShowing: states.ALL
+      currentShowing: states.ALL,
+      count: 0
     }
   }
 
@@ -62,7 +64,8 @@ class App extends React.Component {
           <InputArea addItem = {this.addItem}/>    
           <ViewState noOfItems = {this.state.todos.length} currentShowing = {this.state.currentShowing} changeViewState= {(newState) => this.changeViewState (newState)}/>
           <SearchArea noOfItems = {this.state.todos.length} changeSearchText = {this.changeSearchText} />
-          <AllTodos items={this.state.todos} currentShowing = {this.state.currentShowing} toggleCompletion={(itemId)=> this.changeCompletion(itemId)} searchText = {this.state.searchText}/>
+         {/*  <Count count= {this.state.count}/> */}
+          <AllTodos items={this.state.todos} currentShowing = {this.state.currentShowing} toggleCompletion={(itemId)=> this.changeCompletion(itemId)} searchText = {this.state.searchText} />
         </div>
       </div>
     );

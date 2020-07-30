@@ -16,9 +16,12 @@ export class AllTodos extends Component {
 
   filterFromSearch = (item)=>{
     if (this.props.searchText === '') return true;
-    if (item.content.includes(this.props.searchText)){
+    let itemContent = item.content.trim().toLowerCase();
+    let searchText = this.props.searchText.trim().toLowerCase();
+    if (itemContent.includes(searchText)){
       return true;
     }
+
     return false;
   }
 
@@ -31,7 +34,7 @@ export class AllTodos extends Component {
             allItems
             .filter(item => this.filterFromSearch(item))
             .filter(this.filterTodoItems)
-            .map((todoItem) => <TodoItem key={todoItem.id} item={todoItem} toggleCompletion={(id) => this.props.toggleCompletion.call(this, id)}/>)
+            .map((todoItem) => <TodoItem key={todoItem.id} item={todoItem} increaseCount={this.props.increaseCount} toggleCompletion={(id) => this.props.toggleCompletion.call(this, id) }/>)
           }
         </ul>
       </div>
