@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../css/components/Header/header.scss';
+import '../../style/components/Header/header.scss';
 import color from '../../constants/color.js';
 
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InputButton from '../Button/InputButton';
-import '../../css/components/Input/inputArea.scss';
+import '../../style/components/Input/inputArea.scss';
 
 export class InputArea extends Component {
 

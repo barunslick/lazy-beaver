@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Checkbox from '../Button/Checkbox';
 import colors from '../../constants/color';
-import '../../css/components/Todo/todoItem.scss';
+import '../../style/components/Todo/todoItem.scss';
 
 export class TodoItem extends Component {
 

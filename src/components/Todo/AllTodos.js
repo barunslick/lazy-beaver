@@ -1,6 +1,6 @@
 import TodoItem from './TodoItem';
 import React, { Component } from 'react';
-import '../../css/components/Todo/todo.scss';
+import '../../style/components/Todo/todo.scss';
 
 export class AllTodos extends Component {
 

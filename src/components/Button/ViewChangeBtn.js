@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import colors from '../../constants/color';
-import '../../css/components/View/viewChangeBtn.scss';
+import '../../style/components/View/viewChangeBtn.scss';
 
 export class ViewChangeBtn extends Component {
 

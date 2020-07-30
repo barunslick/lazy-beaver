@@ -8,8 +8,8 @@ import ViewState from './components/ViewStates/ViewState';
 import SearchArea from './components/Input/SearchArea';
 
 import './App.scss';
-import './css/reset.scss';
-import './css/style.scss';
+import './style/reset.scss';
+import './style/style.scss';
 
 class App extends React.Component {
 
