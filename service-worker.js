@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lazy-beaver/precache-manifest.d0c2bbcbccc5e1286f48ab5adc1b7cf3.js"
+  "/lazy-beaver/precache-manifest.9b8d64686e55cc4fb3615b2f7c1a30d1.js"
 );
 
 self.addEventListener('message', (event) => {
