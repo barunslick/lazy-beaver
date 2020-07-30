@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../css/components/searchArea.css';
+import '../../css/components/Search/searchArea.scss';
 
 
 export class SearchArea extends Component {

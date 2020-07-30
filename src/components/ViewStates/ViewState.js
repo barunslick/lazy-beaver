@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import states from '../../constants/states';
 import ViewChangeBtn from '../Button/ViewChangeBtn';
-import '../../css/components/viewState.css';
+import '../../css/components/View/viewState.scss';
 
 
 export class ViewState extends Component {

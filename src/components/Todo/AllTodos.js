@@ -1,6 +1,6 @@
 import TodoItem from './TodoItem';
 import React, { Component } from 'react';
-import '../../css/components/todo.css';
+import '../../css/components/Todo/todo.scss';
 
 export class AllTodos extends Component {
 
@@ -23,8 +23,7 @@ export class AllTodos extends Component {
   }
 
   render() {
-    const allItems = this.props.items;
-    console.log(this.props.searchText)
+    let allItems = this.props.items;
     return (
       <div className="AllTodos">
         <ul>

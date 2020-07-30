@@ -1,0 +1,19 @@
+@import "../../base";
+
+.ViewChangeBtn{
+  cursor: pointer;
+  background-color: $white;
+  border: 1px solid $gray;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 0 5px;
+  font-size: 12px;
+
+  &:hover{
+    background-color: $almost-white;
+  }
+
+  @include mq(md){
+    padding: 8px 16px;
+  }
+}

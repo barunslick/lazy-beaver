@@ -7,9 +7,9 @@ import InputArea from './components/Input/InputArea';
 import ViewState from './components/ViewStates/ViewState';
 import SearchArea from './components/Input/SearchArea';
 
-import './App.css';
-import './css/reset.css';
-import './css/style.css';
+import './App.scss';
+import './css/reset.scss';
+import './css/style.scss';
 
 class App extends React.Component {
 

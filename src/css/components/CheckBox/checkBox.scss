@@ -1,0 +1,32 @@
+@import "../../base";
+
+.itemCheckBox{
+  appearance: none;
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  border: 1px solid $gray;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 600;
+    font-size: 12px;
+    color: $white;
+    display: none;
+  }
+
+  &:checked{
+    background-color: $jade;
+    border: none;
+    &::after{
+      display: inline-block;
+    }
+ }
+
+}

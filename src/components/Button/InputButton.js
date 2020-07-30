@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import color from '../../constants/color.js';
-import '../../css/components/inputButton.css';
+import '../../css/components/Button/inputButton.scss';
 
 const buttonStyle ={
   width: '40px',

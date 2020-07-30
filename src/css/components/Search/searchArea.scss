@@ -1,0 +1,23 @@
+@import "../../base";
+
+.SearchArea{
+  margin-top: 16px;  
+  padding: 12px 15px;
+  background: $almost-white;
+  border-radius: 18px;
+
+  & input{
+    border: none;
+    outline: none;
+    background: $almost-white;
+    width: 91%;
+  }
+
+  & button{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    font-size: 18px;
+    background: $almost-white;
+  }
+}
