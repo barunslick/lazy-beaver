@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import InputButton from '../Button/InputButton';
-import '../../style/components/Input/inputArea.scss';
+import Button from '../../common/Button';
+import './newTaskInput.scss';
 
 export class InputArea extends Component {
 
@@ -30,7 +30,7 @@ export class InputArea extends Component {
     return (
       <div className="InputArea">
         <input className="newInput" placeholder="Add new Task" value={this.state.inputValue} onChange = {(e)=>this.addInput(e)}></input>
-        <InputButton name="inputButton" addItemAndClear={this.addItemAndClear}/>
+        <Button btnContent="+" onClick={this.addItemAndClear} btnClassName="addButton"/>
       </div>
     )
   }

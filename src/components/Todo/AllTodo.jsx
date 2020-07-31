@@ -1,6 +1,7 @@
-import TodoItem from './TodoItem';
 import React, { Component } from 'react';
-import '../../style/components/Todo/todo.scss';
+import TodoItem from './TodoItem/index';
+
+import './todo.scss';
 
 export class AllTodos extends Component {
 
@@ -42,4 +43,4 @@ export class AllTodos extends Component {
   }
 }
 
-export default AllTodos
+export default AllTodos;

@@ -1,12 +1,10 @@
 import React from 'react';
 import states from './constants/states';
-/* import Count from './components/Count/Count.js'; */
-import Header from './components/Header/Header';
-import AllTodos from './components/Todo/AllTodos';
-import InputArea from './components/Input/InputArea';
-import SearchArea from './components/Input/SearchArea';
-import ViewState from './components/ViewStates/ViewState';
-
+import Header from './components/Header/index.js';
+import AllTodos from './components/Todo';
+import NewTaskInput from './components/Input/NewTaskInput';
+import SearchInput from './components/Input/SearchInput';
+import ViewState from './components/ViewState';
 
 import './App.scss';
 import './style/reset.scss';
@@ -28,7 +26,7 @@ class App extends React.Component {
   addItem = (item) => {
     this.setState({
       todos : [...this.state.todos,{
-        id: this.state.todos.length,
+        id: Date.now(),
         content: item,
         completed: false
       }]
@@ -61,10 +59,9 @@ class App extends React.Component {
       <div className="App">
         <div className="container">
           <Header />
-          <InputArea addItem = {this.addItem}/>    
+          <NewTaskInput addItem = {this.addItem}/>    
           <ViewState noOfItems = {this.state.todos.length} currentShowing = {this.state.currentShowing} changeViewState= {(newState) => this.changeViewState (newState)}/>
-          <SearchArea noOfItems = {this.state.todos.length} changeSearchText = {this.changeSearchText} />
-         {/*  <Count count= {this.state.count}/> */}
+          <SearchInput noOfItems = {this.state.todos.length} changeSearchText = {this.changeSearchText} />
           <AllTodos items={this.state.todos} currentShowing = {this.state.currentShowing} toggleCompletion={(itemId)=> this.changeCompletion(itemId)} searchText = {this.state.searchText} />
         </div>
       </div>

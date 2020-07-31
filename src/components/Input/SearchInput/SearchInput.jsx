@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../../style/components/Search/searchArea.scss';
 
+import './searchInput.scss';
 
-export class SearchArea extends Component {
+export class SearchInput extends Component {
 
   constructor(props) {
     super(props);
@@ -41,4 +41,4 @@ export class SearchArea extends Component {
   }
 }
 
-export default SearchArea
+export default SearchInput;

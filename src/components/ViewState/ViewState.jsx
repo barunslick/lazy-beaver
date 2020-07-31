@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import states from '../../constants/states';
-import ViewChangeBtn from '../Button/ViewChangeBtn';
-import '../../style/components/View/viewState.scss';
+import Button from '../common/Button/index';
+import './viewState.scss';
 
 
 export class ViewState extends Component {
@@ -12,7 +12,7 @@ export class ViewState extends Component {
       <div className="ViewState">
         {
           Object.entries(states)
-          .map((item, index) => <ViewChangeBtn key = {index} text={item[0]} id = {index} currentShowing = {this.props.currentShowing} changeViewState = {(newStateId) => this.props.changeViewState.call(this, newStateId)}/>) 
+          .map((item, index) => <Button key = {index} btnClassName = {`ViewChangeBtn ${this.props.currentShowing === index ? 'active' : '' }`} btnContent={item[0]} id = {index} onClick = {this.props.changeViewState.bind(this, index)}/>) 
         }
       </div>
     )

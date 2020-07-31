@@ -1,4 +1,15 @@
-@import "../../base";
+@import '../../../style/base';
+
+.addButton{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: $base-color;
+  font-size: 20px;
+  border-radius: 20px;
+  color: $white;
+}
+
 
 .ViewChangeBtn{
   cursor: pointer;
@@ -16,4 +27,9 @@
   @include mq(md){
     padding: 8px 16px;
   }
+}
+
+.ViewChangeBtn.active{
+  background-color : $base-color;
+  color: $white;
 }
